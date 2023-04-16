@@ -1,0 +1,29 @@
+name: marvellous-terraform-vpc-plugin
+description: A simple but marvellous plugin for start terraform vpc aws powered by Stackspot
+display-name: marvellous-terraform-vpc-plugin
+picture: plugin.png
+category: backend # Ref: https://docs.stackspot.com/docs/create-stacks/yaml-files/plugin/#category
+compatibility:
+  - java
+  - spring
+about: docs/about.md
+usage: docs/usage.md
+use-case: docs/use-case.md
+implementation: docs/implementation.md
+technologies: # Ref: https://docs.stackspot.com/docs/create-stacks/yaml-files/yaml/#technologies
+  - "Api"
+types:
+  - app
+inputs:
+  - label: AWS Region
+    type: text
+    name: region
+    default: '"us-east-1"'
+  - label: Size of Pub Subnets
+    type: text
+    name: number_of_public_subnets
+    default: "2"
+  - label: Size of priv Subnets
+    type: text
+    default: "2"
+    name: number_of_private_subnets

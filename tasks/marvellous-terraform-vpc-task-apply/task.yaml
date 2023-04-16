@@ -1,0 +1,13 @@
+name: marvellous-terraform-vpc-task-apply
+description: A simple but marvellous task for apply terraform vpc aws powered by Stackspot
+supported-os:
+- windows
+- linux
+- mac
+requirements-check:
+  dependency-example:
+    check-command: terraform version
+    info: terraform is not installed
+command: 
+  linux:
+    terraform init && terraform apply --auto-approve
